@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+body {
+  margin: 0;
+  background: #2a2f32 !important;
+  color: white !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 10px auto !important;
+}
+
+/* --------Navbar--------- */
+nav {
+  width: 100%;
+  background-image: linear-gradient(
+    to left,
+    rgba(52, 152, 219, 0.571),
+    rgba(52, 152, 219, 0.29)
+  );
+}
+nav ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+nav ul li {
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+nav .nav-logo {
+  color: white;
+  font-size: 24px;
+  text-decoration: line-through;
+  font-weight: bold;
+  margin-right: 40px;
+}
+nav .nav-logo .logo_link:hover {
+  color: white !important;
+}
+nav ul li .link {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+nav ul li .link:hover {
+  color: rgb(0, 0, 0);
+}
+nav ul .nav-toggle {
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.active_link {
+  color: blueviolet;
+  border-bottom: 1px solid #000;
+}
+
+nav .nav-link-img {
+  align-self: flex-end;
+  margin-left: auto;
+  margin-right: 40px;
+}
+nav img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+/* ---------Navbar---------- */
+
+/* -----Home Page ------ */
+
+#homePage .showCase {
+  background-image: radial-gradient(
+      rgba(0, 0, 0, 0.3) 5%,
+      rgba(0, 0, 0, 0.5) 15%,
+      rgba(0, 0, 0, 0.7) 60%
+    ),
+    url("Images/bg-home.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40vh;
+}
+
+#homePage h1 {
+  font-size: 4rem;
+}
+
+.main_body {
+  width: 100vw;
+  height: auto;
+  padding: 40px 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+#homePage .main_body img {
+  width: 150px;
+  height: 175px;
+  border-radius: 132px;
+}
+
+@media (min-width: 576px) {
+  #homePage .showCase {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-wrap: wrap;
+  }
+  nav ul .nav-logo {
+    order: 0;
+    flex: 1;
+  }
+  nav ul .nav-link,
+  .nav-link-img {
+    display: none;
+    width: 100%;
+    text-align: center;
+    order: 2;
+  }
+  nav ul .nav-toggle {
+    display: block;
+    margin-left: auto;
+    order: 1;
+  }
+  .d-inline-block {
+    display: inline-block !important;
+  }
+}
