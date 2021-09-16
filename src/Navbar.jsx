@@ -14,7 +14,7 @@ const Navbar = () => {
                    <li className="nav-link"><NavLink exact className="link" activeClassName="acitive_link" to="/about">About</NavLink></li>
                    <li className="nav-link"><NavLink exact className="link" activeClassName="acitive_link" to="/contactus">Contact Us</NavLink></li>
                    <li className="nav-link"><NavLink exact className="link" activeClassName="acitive_link" to="/projects">Projects</NavLink></li>
-                   <li className="nav-link-img"><NavLink exact className="link-img" activeClassName="acitive_link" to="/projects"><img src={image} alt="tahir img" /></NavLink></li>
+                   <li className="nav-link-img"><NavLink exact className="link-img" activeClassName="acitive_link" to="/"><img src={image} alt="tahir img" /></NavLink></li>
                </ul>
             </nav>
         </>
