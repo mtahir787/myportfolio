@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   user-select: none;
-  overflow: hidden;
 }
 body {
   margin: 0;
@@ -19,6 +18,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 h1,
@@ -61,7 +70,7 @@ nav .nav-logo .logo_link:hover {
   color: white !important;
 }
 nav ul li .link {
-  text-decoration: none;
+  text-decoration: none !important;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
@@ -92,10 +101,19 @@ nav img {
   width: 50px;
   border-radius: 50%;
 }
+.acitive_link {
+  color: rgba(0, 0, 0, 0.8) !important;
+  border-bottom: 2px solid black;
+}
 
 /* ---------Navbar---------- */
 
 /* -----Home Page ------ */
+
+#homePage {
+  width: 100%;
+  height: auto;
+}
 
 #homePage .showCase {
   background-image: radial-gradient(
@@ -120,7 +138,7 @@ nav img {
 }
 
 .main_body {
-  width: 100vw;
+  width: 100%;
   height: auto;
   padding: 40px 0px;
   display: grid;
@@ -133,10 +151,136 @@ nav img {
   height: 175px;
   border-radius: 132px;
 }
+/* -----Home Page End------ */
+
+/* ------About Page Start------ */
+
+#aboutPage {
+  width: 100%;
+  height: auto;
+}
+
+#aboutPage .showCase_about {
+  width: 100%;
+  height: 40vh;
+  background-image: radial-gradient(
+      rgba(0, 0, 0, 0.5) 5%,
+      rgba(0, 0, 0, 0.6) 15%,
+      rgba(0, 0, 0, 0.7) 60%
+    ),
+    url("Images/programming.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ------About Page End------ */
+
+/* ------ContactUs Page Start */
+
+#contactUsPage {
+  width: 100%;
+  height: auto;
+}
+
+#contactUsPage .showCase_contactUs {
+  width: 100%;
+  height: 40vh;
+  background-image: radial-gradient(
+      rgba(0, 0, 0, 0.5) 5%,
+      rgba(0, 0, 0, 0.6) 15%,
+      rgba(0, 0, 0, 0.7) 60%
+    ),
+    url("Images/programming3.jpg");
+  background-position: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#contactUsPage .feedback {
+  width: 100%;
+  height: auto;
+  padding: 50px 0px;
+}
+#contactUsPage .feedback form {
+  width: 80%;
+  margin: auto;
+}
+#contactUsPage .feedback .form-group {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 20px;
+}
+#contactUsPage .feedback form {
+  width: 80%;
+  margin: auto;
+}
+#contactUsPage .feedback .form-group {
+  width: 80vw;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+#contactUsPage .feedback .form-group input,
+textarea {
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+}
+#contactUsPage .feedback input[type="submit"] {
+  padding: 5px 20px;
+  margin-left: 50px;
+  margin-top: 30px;
+  background-color: rgba(64, 224, 208, 0.722);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+#contactUsPage .feedback input[type="submit"]:hover {
+  background-color: rgb(64, 224, 208);
+}
+
+/* ------ContactUs Page End */
+
+/* ------Projects Page End */
+
+.card {
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0, 1);
+  box-shadow: 0px 13px 10px -7px rgb(255, 255, 255, 0.5);
+}
+
+.card:hover {
+  transform: scale(1.05, 1.05);
+}
+
+/* ------Projects Page End */
 
 @media (min-width: 576px) {
   #homePage .showCase {
     height: 80vh;
+  }
+  #aboutPage .showCase_about {
+    height: 50vh;
+  }
+  #contactUsPage .showCase_contactUs {
+    height: 70vh;
+  }
+}
+
+@media (min-width: 768px) {
+  #aboutPage .showCase_about {
+    height: 100vh;
+  }
+  #contactUsPage .showCase_contactUs {
+    height: 70vh;
+  }
+  #contactUsPage .showCase_contactUs {
+    height: 100vh;
   }
 }
 

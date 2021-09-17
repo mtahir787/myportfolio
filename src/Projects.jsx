@@ -1,11 +1,16 @@
-import React from 'react';
- 
-const Services = () => {
-    return (
-        <>
-            <h1>Services page</h1>
-        </>
-    );
-}
+import React from "react";
+import Card from "./Card";
 
-export default Services;
+const Projects = () => {
+  return (
+    <>
+      <div className="container projectPage">
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+      </div>
+    </>
+  );
+};
+
+export default Projects;
