@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useDebugValue } from "react";
 import Card from "./Card";
+import CardsData from "./CardsData";
 
 const Projects = () => {
   return (
     <>
       <div className="container projectPage">
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
+        {CardsData.map((value) => {
+          return (
+            <Card
+              imgsrc={value.imgsrc}
+              title={value.title}
+              des={value.description}
+              gitlink={value.gitlink}
+              livedemolink={value.livedemolink}
+            />
+          );
+        })}
       </div>
     </>
   );
