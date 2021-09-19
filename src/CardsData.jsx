@@ -9,7 +9,7 @@ const CardsData = [
   },
   {
     imgsrc:
-      "https://images.pexels.com/photos/4974912/pexels-photo-4974912.jpeg?cs=srgb&dl=pexels-olia-danilevich-4974912.jpg&fm=jpg",
+      "https://images.pexels.com/photos/577514/pexels-photo-577514.jpeg?cs=srgb&dl=pexels-led-supermarket-577514.jpg&fm=jpg",
     title: "Light ON OFF Project",
     description: "This is about myslef and my work",
     gitlink: "https://github.com/mtahir787/lightonoffproject",
