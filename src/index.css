@@ -249,10 +249,15 @@ textarea {
 
 /* ------Projects Page End */
 
+.projheading {
+  text-align: center;
+}
+
 .card {
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0, 1);
   /* box-shadow: 0px 13px 10px -7px rgb(255, 255, 255, 0.5); */
   box-shadow: rgba(255, 255, 255, 0.5) 0px 5px 15px;
+  background: darkslateblue !important;
 }
 
 .card:hover {

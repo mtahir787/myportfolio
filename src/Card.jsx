@@ -16,11 +16,11 @@ const Card = (props) => {
           <h5 className="card-title"> {props.title} </h5>
           <p className="card-text">{props.desc}</p>
         </div>
-        <ul className="list-group list-group-flush">
+        {/* <ul className="list-group list-group-flush">
           <li className="list-group-item">An item</li>
           <li className="list-group-item">A second item</li>
           <li className="list-group-item">A third item</li>
-        </ul>
+        </ul> */}
         <div className="card-body">
           <a href={props.gitlink} className="card-link" target="_blank">
             Git Hub Link
